@@ -20,6 +20,8 @@ angular
         .run(function ($rootScope, $route) {
             $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
                 $rootScope.route = $route.current;
+                $rootScope.title = $route.current.data.title;
+                $rootScope.keywords = $route.current.data.keywords;
             });
         })
         .config(function ($routeProvider) {
@@ -28,33 +30,49 @@ angular
                         templateUrl: 'views/home.html',
                         controller: 'HomeCtrl',
                         data: {
-                            tab: 'home'
+                            tab: 'home',
+                            title: 'Angular Rocks',
+                            description: 'Esto es la descripción por defecto',
+                            keywords: ['angular', 'rocks', 'default']
                         }
                     })
                     .when('/foo', {
                         templateUrl: 'views/underConstruction.html',
                         data: {
-                            tab: 'foo'
+                            tab: 'foo',
+                            title: 'Angular Rocks',
+                            description: 'Esto es la descripción por defecto',
+                            keywords: ['angular', 'rocks', 'default']
                         }
                     })
                     .when('/bar', {
                         templateUrl: 'views/underConstruction.html',
                         data: {
-                            tab: 'bar'
+                            tab: 'bar',
+                            title: 'Angular Rocks',
+                            description: 'Esto es la descripción por defecto',
+                            keywords: ['angular', 'rocks', 'default']
                         }
                     })
                     .when('/bands', {
                         templateUrl: 'views/bands.html',
                         controller: 'BandsCtrl',
                         data: {
-                            tab: 'bands'
+                            tab: 'bands',
+                            title: 'Angular Rocks',
+                            description: 'Esto es la descripción por defecto',
+                            keywords: ['angular', 'rocks', 'default']
+
                         }
                     })
                     .when('/:bandName', {
                         templateUrl: 'views/band.html',
                         controller: 'BandCtrl',
                         data: {
-                            tab: 'bands'
+                            tab: 'bands',
+                            title: 'Angular Rocks',
+                            description: 'Esto es la descripción por defecto',
+                            keywords: ['angular', 'rocks', 'default']
                         }
                     })
                     .otherwise({
