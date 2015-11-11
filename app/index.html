@@ -41,6 +41,7 @@
               <li ng-class="{'active': route.data.tab === 'home'}"><a href="#/">Home</a></li>
               <li ng-class="{'active': route.data.tab === 'foo'}"><a href="#/foo">Foo</a></li>
               <li ng-class="{'active': route.data.tab === 'bar'}"><a href="#/bar">Bar</a></li>
+              <li ng-class="{'active': route.data.tab === 'bands'}"><a href="#/bands">Bands</a></li>
             </ul>
           </div>
         </div>
@@ -86,7 +87,9 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/home.js"></script>
-        <script src="scripts/controllers/band.js"></script>
+        <script src="scripts/controllers/bands.js"></script>
+        <script src="scripts/controllers/bands.js"></script>
+        <script src="scripts/services/bands.js"></script>
         <!-- endbuild -->
 </body>
 </html>
