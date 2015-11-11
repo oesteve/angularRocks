@@ -50,6 +50,13 @@ angular
                             tab: 'bands'
                         }
                     })
+                    .when('/:bandName', {
+                        templateUrl: 'views/band.html',
+                        controller: 'BandCtrl',
+                        data: {
+                            tab: 'bands'
+                        }
+                    })
                     .otherwise({
                         redirectTo: '/'
                     });
