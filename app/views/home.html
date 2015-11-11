@@ -1,1 +1,29 @@
 <h1>Página de inicio</h1>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Home</td>
+            <td><a href="#/home">/</a></td>
+        </tr>
+        <tr>
+            <td>Bar</td>
+            <td><a href="#/bar">/bar</a></td>
+        </tr>
+        <tr>
+            <td>Foo</td>
+            <td><a href="#/foo">/foo</a></td>
+        </tr>
+        <tr ng-repeat="band in bands">
+            <td>{{ band.name }}</td>
+            <td><a href="#/{{ band.slug }}">/{{ band.slug }}</a></td>
+        </tr>
+    </tbody>
+</table>
