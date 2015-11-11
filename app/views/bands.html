@@ -1,7 +1,11 @@
-<p>Bandas:</p>
+<h1>Las mejores bandas del sigo XX</h1>
 
-<ul>
-    <li ng-repeat="band in bands">
-        <a href="#/{{band.slug}}">{{band.name}}</a>
-    </li>
-</ul>
+
+<div class="row">
+    <div class="col-lg-4" ng-repeat="band in bands">
+        <img class="img-circle" src="{{ band.logo }}" alt="{{band.name}}">
+        <h3>{{band.name}}</h3>
+        <p>{{band.resume}}</p>
+        <p><a class="btn btn-primary" href="#/{{band.slug}}" role="button">Ver detalles »</a></p>
+    </div><!-- /.col-lg-4 -->
+</div>
