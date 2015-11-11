@@ -20,8 +20,11 @@ angular
         .run(function ($rootScope, $route) {
             $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
                 $rootScope.route = $route.current;
-                $rootScope.title = $route.current.data.title;
-                $rootScope.keywords = $route.current.data.keywords;
+                if ($route.current.data !== undefined) {
+                    $rootScope.title = $route.current.data.title;
+                    $rootScope.description = $route.current.data.description;
+                    $rootScope.keywords = $route.current.data.keywords;
+                }
             });
         })
         .config(function ($routeProvider) {
