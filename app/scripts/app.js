@@ -15,7 +15,8 @@ angular
             'ngResource',
             'ngRoute',
             'ngSanitize',
-            'ngTouch'
+            'ngTouch',
+            'youtube-embed'
         ])
         .run(function ($rootScope, $route) {
             $rootScope.$on('$routeChangeSuccess', function (e, current, pre) {
