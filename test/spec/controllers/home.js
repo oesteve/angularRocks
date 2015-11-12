@@ -16,7 +16,7 @@ describe('Controller: HomeCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
+  it('Número inesperado de bandas en el servicio', function () {
     expect(scope.bands.length).toBe(3);
   });
 });

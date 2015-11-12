@@ -12,11 +12,12 @@ describe('Controller: BandCtrl', function () {
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
     BandCtrl = $controller('BandCtrl', {
-      $scope: scope
+      $scope: scope,
+      $routeParams: {bandName: 'queen'}
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.bands.length).toBe(3);
+  it('Se esperaba que el slug de la banda fuese queen', function () {
+    expect(scope.band.slug).toBe('queen');
   });
 });
