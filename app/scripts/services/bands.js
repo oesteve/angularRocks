@@ -31,10 +31,11 @@ angular.module('angularRocksApp')
                 }, {
                     name: 'Queen',
                     slug: 'queen',
-                    logo: 'images/queen_logo.png',
+                    logo: 'images/queen_logo.jpg',
                     imgLarge: 'http://orig06.deviantart.net/61df/f/2008/238/0/e/queen_the_band_by_fallenzeraphine.jpg',
                     summary: 'Una de las mejores bandas de rock del sigo XX',
                     history: 'Queen es una banda británica de rock formada en 1970 en Londres por el cantante Freddie Mercury, el guitarrista Brian May, el baterista Roger Taylor y el bajista John Deacon. Si bien el grupo ha presentado bajas de dos de sus miembros (Freddie Mercury, que murió en 1991 y John Deacon, que se retiró en 1997), los integrantes restantes, Brian May y Roger Taylor, continúan trabajando bajo el nombre Queen, por lo que la banda aún es considerada activa.',
+                    wikipedia: 'https://es.wikipedia.org/wiki/Queen',
                     keywords: ['Queen', 'británica', 'banda', 'Freddie Mercury' ]
                 }];
 
