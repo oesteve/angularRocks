@@ -1,7 +1,9 @@
 {
   "name": "angularrocks",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "jpegtran-bin": "^3.0.5"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
