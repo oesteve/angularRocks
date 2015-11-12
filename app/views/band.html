@@ -3,12 +3,16 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>{{ band.name }}</h1>
-        <p class="lead">{{ band.summary }}</p>
+        <h1>{{ band.name}}</h1>
+        <p class="lead">{{ band.summary}}</p>
     </div>
 </div>
 
-<p class="lead">{{ band.history }}</p>
+<div class="embed-responsive embed-responsive-16by9">
+  <youtube-video class="embed-responsive-item" video-id="theBestVideo"></youtube-video>
+</div>
+
+<p class="lead">{{ band.history}}</p>
 <div class="pull-right">
-    <a class="btn btn-sm btn-primary" target="_blanck" ng-href="{{ band.wikipedia }}"><i class="fa fa-wikipedia-w"></i> Mas información</a>
+    <a class="btn btn-sm btn-primary" target="_blanck" ng-href="{{ band.wikipedia}}"><i class="fa fa-wikipedia-w"></i> Mas información</a>
 </div>

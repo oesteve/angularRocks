@@ -27,6 +27,9 @@ angular.module('angularRocksApp')
             if ($routeParams.bandName !== null) {
                 $scope.band = band;
 
+                // Video
+                $scope.theBestVideo = band.youtube;
+
                 // Metadata
                 $rootScope.title = band.name;
                 $rootScope.description = band.history;
